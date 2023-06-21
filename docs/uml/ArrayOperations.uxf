@@ -1,0 +1,18 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>50</x><y>30</y><w>740</w><h>290</h></coordinates><panel_attributes>com.gurkan
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>80</x><y>80</y><w>330</w><h>220</h></coordinates><panel_attributes>utils
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>460</x><y>80</y><w>260</w><h>220</h></coordinates><panel_attributes>interfaces
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>100</x><y>150</y><w>290</w><h>100</h></coordinates><panel_attributes>ArrayOperations
+--
+
+--
++ any( ArrayList&lt;T&gt;, IArrayCallback&lt;T&gt; ) : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>50</x><y>330</y><w>740</w><h>100</h></coordinates><panel_attributes>java.util
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>380</y><w>100</w><h>30</h></coordinates><panel_attributes>ArrayList</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>150</y><w>210</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/IArrayCallback&lt;T&gt;/
+--
+
+--
++ call( T, int ) : boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>240</y><w>130</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>110;160;10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>160</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element></diagram>

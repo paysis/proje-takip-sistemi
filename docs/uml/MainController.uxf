@@ -1,0 +1,66 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>101</x><y>430</y><w>990</w><h>490</h></coordinates><panel_attributes>com.gurkan
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>470</y><w>290</w><h>270</h></coordinates><panel_attributes>MainController
+--
+- currentProject : Project
+- notesTreeView : TreeView&lt;Note&gt;
+- projectListView : ListView&lt;Project&gt;
+- projectListViewData : ObservableList&lt;Project&gt;
+- recentMenu : Menu
+- webView1 : WebView
+--
+- QuitApp( ) : void
+- createNewWorkspace( ) : void
++ initialize( URL, ResourceBundle ) : void
+- openDatabase( File ) : void
+- openDatabaseAndRetrieve( ) : void
+- saveAsCurrentWorkplace( ) : void
+- saveCurrentWorkplace( ) : void
+- switchToAbout( ) : void
+- switchToCreateProjectForm( ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>101</x><y>0</y><w>990</w><h>420</h></coordinates><panel_attributes>javafx
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>121</x><y>50</y><w>160</w><h>90</h></coordinates><panel_attributes>fxml
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>90</y><w>100</w><h>30</h></coordinates><panel_attributes>/Initializable/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>121</x><y>150</y><w>420</w><h>260</h></coordinates><panel_attributes>scene
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>240</y><w>100</w><h>30</h></coordinates><panel_attributes>ListView</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>281</x><y>290</y><w>100</w><h>30</h></coordinates><panel_attributes>Menu</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>290</y><w>100</w><h>30</h></coordinates><panel_attributes>TreeView</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>281</x><y>240</y><w>100</w><h>30</h></coordinates><panel_attributes>MenuItem</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>340</y><w>100</w><h>30</h></coordinates><panel_attributes>TreeItem</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>301</x><y>50</y><w>240</w><h>90</h></coordinates><panel_attributes>collections
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>351</x><y>90</y><w>100</w><h>30</h></coordinates><panel_attributes>/ObservableList/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>141</x><y>190</y><w>260</w><h>200</h></coordinates><panel_attributes>control
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>411</x><y>180</y><w>120</w><h>210</h></coordinates><panel_attributes>web
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>421</x><y>240</y><w>100</w><h>30</h></coordinates><panel_attributes>WebView</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>421</x><y>340</y><w>100</w><h>30</h></coordinates><panel_attributes>WebEngine</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>561</x><y>50</y><w>230</w><h>90</h></coordinates><panel_attributes>event
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>581</x><y>90</y><w>100</w><h>30</h></coordinates><panel_attributes>ActionEvent</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>481</x><y>510</y><w>300</w><h>140</h></coordinates><panel_attributes>Note
+--
++ DEFAULT_DETAILS : String
++ details : String
++ text : String
+--
++ Note( Note ) : void
++ Note( String ) : void
++ toString( ) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>461</x><y>470</y><w>620</w><h>440</h></coordinates><panel_attributes>data
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>471</x><y>700</y><w>600</w><h>190</h></coordinates><panel_attributes>Project
+--
++ DEFAULT_WELCOME : String
++ imgPath : String 
++ imgSmooth : boolean 
++ name : String
++ rootTreeItem : TreeItem&lt;Note&gt;
+--
++ Project( Project ) : void
++ Project( String, String ) : void
++ Project( String, String, boolean ) : void
++ modifyProjectCellFactory( EditableListCell, ObservableList&lt;Project&gt;, TreeView&lt;Note&gt;, WebView ) : void
++ toString( ) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>101</x><y>930</y><w>830</w><h>230</h></coordinates><panel_attributes>java
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>121</x><y>970</y><w>220</w><h>160</h></coordinates><panel_attributes>io
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>1030</y><w>100</w><h>30</h></coordinates><panel_attributes>File</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>401</x><y>970</y><w>220</w><h>160</h></coordinates><panel_attributes>util
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>681</x><y>970</y><w>220</w><h>160</h></coordinates><panel_attributes>net
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>151</x><y>1090</y><w>100</w><h>30</h></coordinates><panel_attributes>IOException</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>451</x><y>1030</y><w>100</w><h>30</h></coordinates><panel_attributes>/ResourceBundle/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>741</x><y>1030</y><w>100</w><h>30</h></coordinates><panel_attributes>URL</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>61</x><y>100</y><w>110</w><h>440</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>90;10;10;10;10;420;90;420</additional_attributes></element><element><id>Relation</id><coordinates><x>81</x><y>240</y><w>90</w><h>280</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>70;10;10;10;10;260;70;260</additional_attributes></element><element><id>Relation</id><coordinates><x>311</x><y>310</y><w>30</w><h>180</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>431</x><y>560</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>381</x><y>730</y><w>110</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>90;70;10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>391</x><y>110</y><w>260</w><h>380</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;10;180;50;240;150;220;330;10;360</additional_attributes></element><element><id>Relation</id><coordinates><x>101</x><y>290</y><w>70</w><h>210</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>50;10;10;10;10;190;50;190</additional_attributes></element><element><id>Relation</id><coordinates><x>361</x><y>240</y><w>250</w><h>250</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;230;10;220;170;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>341</x><y>110</y><w>360</w><h>380</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>310;10;340;240;10;360</additional_attributes></element><element><id>Relation</id><coordinates><x>191</x><y>730</y><w>60</w><h>320</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;300;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>251</x><y>240</y><w>50</w><h>250</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>30;10;10;10;20;230</additional_attributes></element><element><id>Relation</id><coordinates><x>311</x><y>730</y><w>160</w><h>330</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>140;310;70;310;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>341</x><y>730</y><w>420</w><h>330</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>400;310;350;310;30;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>241</x><y>730</y><w>70</w><h>400</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;380;50;380;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>451</x><y>260</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element></diagram>

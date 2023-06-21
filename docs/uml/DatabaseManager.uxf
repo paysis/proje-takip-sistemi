@@ -1,0 +1,52 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>180</x><y>50</y><w>880</w><h>750</h></coordinates><panel_attributes>com.gurkan
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>200</x><y>90</y><w>840</w><h>370</h></coordinates><panel_attributes>database
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>550</x><y>470</y><w>490</w><h>320</h></coordinates><panel_attributes>data
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>130</y><w>380</w><h>250</h></coordinates><panel_attributes>DatabaseManager
+--
++ database_filepath : String
++ database_objectdirpath : String
+--
++ clearDatabase( ) : void
++ extractAllFeatures( ) : ArrayList&lt;Map&lt;String, String&gt;&gt;
++ extractFeatures( String ) : Map&lt;String, String&gt;
++ getDatabaseFilePath( ) : String
++ insertProject&lt;T -&gt; Project&gt;( T ) : void
++ readRawRows( ) : ArrayList&lt;String&gt;
++ retrieveAllProjects&lt;T -&gt; Project&gt;( ) : ArrayList&lt;T&gt;
++ retrieveProject&lt;T -&gt; Project&gt;( String ) : T
++ retrieveProjects&lt;T -&gt; Project&gt;( ArrayList&lt;String&gt; ) : ArrayList&lt;T&gt;
++ saveProjects&lt;T -&gt; Project&gt;( T[] ) : void
++ setDatabaseFilePath( String ) : void </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>530</y><w>440</w><h>220</h></coordinates><panel_attributes>Project
+--
++ DEFAULT_WELCOME : String
++ imgPath : String 
++ imgSmooth : boolean 
++ name : String
++ rootTreeItem : TreeItem&lt;Note&gt;
+--
++ Project( Project ) : void
++ Project( String, String ) : void
++ Project( String, String, boolean ) : void
++ modifyProjectCellFactory( EditableListCell, ObservableList&lt;Project&gt;, TreeView&lt;Note&gt;, WebView ) : void
++ toString( ) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1070</x><y>50</y><w>400</w><h>750</h></coordinates><panel_attributes>java
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1080</x><y>80</y><w>380</w><h>160</h></coordinates><panel_attributes>lang
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1080</x><y>290</y><w>380</w><h>160</h></coordinates><panel_attributes>util
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>1080</x><y>490</y><w>380</w><h>240</h></coordinates><panel_attributes>io
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1150</x><y>140</y><w>100</w><h>30</h></coordinates><panel_attributes>String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>350</y><w>100</w><h>30</h></coordinates><panel_attributes>ArrayList</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>540</y><w>140</w><h>30</h></coordinates><panel_attributes>File</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1160</x><y>400</y><w>100</w><h>30</h></coordinates><panel_attributes>Map</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>600</y><w>140</w><h>30</h></coordinates><panel_attributes>IOException</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>140</y><w>230</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>210;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>250</y><w>240</w><h>130</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>220;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>290</y><w>240</w><h>150</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>220;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>940</x><y>330</y><w>190</w><h>230</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>170;210;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>920</x><y>370</y><w>200</w><h>260</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>180;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>370</y><w>40</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>20;160;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>170</y><w>310</w><h>190</h></coordinates><panel_attributes>TreeItemSerializationWrapper
+--
+- treeItem : TreeItem&lt;T&gt;
+--
++ TreeItemSerializationWrapper( TreeItem&lt;T&gt; ) : void
+- readObject( ObjectInputStream ) : void
+- readResolve( ) : Object
+- writeObject( ObjectOutputStream ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1290</x><y>540</y><w>130</w><h>30</h></coordinates><panel_attributes>/Serializable/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>0</y><w>1170</w><h>580</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>1090;560;1150;560;1150;10;10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>510</x><y>250</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>140</y><w>100</w><h>30</h></coordinates><panel_attributes>T -&gt; Serializable</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>0</x><y>50</y><w>170</w><h>750</h></coordinates><panel_attributes>javafx.scene.control
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>170</y><w>100</w><h>30</h></coordinates><panel_attributes>TreeItem</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1290</x><y>600</y><w>130</w><h>30</h></coordinates><panel_attributes>ObjectInputStream</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1290</x><y>670</y><w>130</w><h>30</h></coordinates><panel_attributes>ObjectOutputStream</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1290</x><y>140</y><w>150</w><h>30</h></coordinates><panel_attributes>ClassNotFoundException</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1100</x><y>670</y><w>140</w><h>30</h></coordinates><panel_attributes>ObjectStreamException</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>350</y><w>830</w><h>520</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>810;350;810;500;10;500;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>370</x><y>350</y><w>820</w><h>490</h></coordinates><panel_attributes>lt=..&gt;</panel_attributes><additional_attributes>10;10;10;470;720;470;720;300;800;300;800;280</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>350</y><w>1040</w><h>550</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>990;260;1020;260;1020;520;10;530;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>350</y><w>1010</w><h>590</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>970;330;990;330;990;560;10;570;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>20</y><w>1000</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>980;120;980;10;10;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>110</x><y>170</y><w>120</w><h>100</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;40;10;40;80;100;80</additional_attributes></element></diagram>

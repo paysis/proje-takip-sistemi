@@ -1,0 +1,36 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLPackage</id><coordinates><x>262</x><y>180</y><w>330</w><h>320</h></coordinates><panel_attributes>com.gurkan
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>302</x><y>240</y><w>240</w><h>120</h></coordinates><panel_attributes>YesnoDialogController
+--
+~ noButton : Button
+~ yesButton : Button
+- textFlowContainer : TextFlow
+--
++ init( Text, Text, IYesnoDialog ) : void
++ initialize( URL, ResourceBundle ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>602</x><y>180</y><w>330</w><h>320</h></coordinates><panel_attributes>javafx
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>272</x><y>370</y><w>310</w><h>120</h></coordinates><panel_attributes>interfaces
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>312</x><y>400</y><w>210</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+IYesnoDialog
+--
+
+--
++ call( boolean ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>612</x><y>210</y><w>150</w><h>120</h></coordinates><panel_attributes>fxml
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>612</x><y>340</y><w>310</w><h>150</h></coordinates><panel_attributes>scene
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>622</x><y>370</y><w>140</w><h>110</h></coordinates><panel_attributes>control
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>772</x><y>370</y><w>140</w><h>110</h></coordinates><panel_attributes>text
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>772</x><y>210</y><w>150</w><h>120</h></coordinates><panel_attributes>event
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>410</y><w>100</w><h>30</h></coordinates><panel_attributes>Button</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>792</x><y>400</y><w>100</w><h>30</h></coordinates><panel_attributes>TextFlow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>792</x><y>250</y><w>100</w><h>30</h></coordinates><panel_attributes>ActionEvent</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>22</x><y>180</y><w>230</w><h>320</h></coordinates><panel_attributes>java
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>42</x><y>210</y><w>200</w><h>130</h></coordinates><panel_attributes>util
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>42</x><y>360</y><w>200</w><h>130</h></coordinates><panel_attributes>net
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>792</x><y>440</y><w>100</w><h>30</h></coordinates><panel_attributes>Text</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>82</x><y>270</y><w>100</w><h>30</h></coordinates><panel_attributes>/ResourceBundle/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>82</x><y>420</y><w>100</w><h>30</h></coordinates><panel_attributes>URL</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>632</x><y>260</y><w>100</w><h>30</h></coordinates><panel_attributes>/Initializable/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>532</x><y>270</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>532</x><y>330</y><w>120</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>100;100;30;100;30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>532</x><y>340</y><w>440</w><h>210</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>360;70;420;70;420;190;20;190;20;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>150</y><w>400</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>380;100;380;10;10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>350</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>172</x><y>270</y><w>150</w><h>30</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>152</x><y>320</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;100;10;10;150;10</additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>350</y><w>340</w><h>220</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>320;120;320;200;10;200;10;10</additional_attributes></element></diagram>

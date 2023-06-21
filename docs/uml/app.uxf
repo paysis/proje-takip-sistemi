@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>108</x><y>237</y><w>729</w><h>396</h></coordinates><panel_attributes>com.gurkan
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>108</x><y>12</y><w>729</w><h>207</h></coordinates><panel_attributes>javafx
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>135</x><y>498</y><w>477</w><h>126</h></coordinates><panel_attributes>interfaces
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>117</x><y>39</y><w>171</w><h>81</h></coordinates><panel_attributes>application
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>333</x><y>48</y><w>486</w><h>162</h></coordinates><panel_attributes>scene
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>342</x><y>84</y><w>90</w><h>27</h></coordinates><panel_attributes>Scene</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>153</x><y>534</y><w>189</w><h>81</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/IProjectControllerCallback/
+--
+
+--
++ call( Project ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>396</x><y>534</y><w>189</w><h>81</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/IYesnoDialog/
+--
+
+--
++ call( boolean ) : void </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>612</x><y>84</y><w>189</w><h>108</h></coordinates><panel_attributes>image
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>639</x><y>120</y><w>90</w><h>27</h></coordinates><panel_attributes>Image</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>549</x><y>264</y><w>270</w><h>234</h></coordinates><panel_attributes>data
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>300</y><w>252</w><h>126</h></coordinates><panel_attributes>Note
+--
++ DEFAULT_DETAILS : String
++ details : String
++ text : String
+--
++ Note( Note ) : void
++ Note( String ) : void
++ toString( ) : String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>75</y><w>90</w><h>27</h></coordinates><panel_attributes>/Application/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>135</x><y>282</y><w>315</w><h>189</h></coordinates><panel_attributes>App
+--
+- scene : Scene
+--
+- getAppIcon( ) : Image
+- loadFXML( String ) : Parent
++ main( String[] ) : void
+~ setRoot( String ) : void
++ showAbout( ) : Stage
++ showModifyDetails( Note ) : Stage
++ showProjectCreate( IProjectControllerCallback ) : Stage
++ showYesnoDialog( String, String, IYesnoDialog ) : Stage
++ start( Stage ) : void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>459</x><y>84</y><w>90</w><h>27</h></coordinates><panel_attributes>/Parent/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>117</x><y>129</y><w>171</w><h>81</h></coordinates><panel_attributes>stage
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>135</x><y>165</y><w>90</w><h>27</h></coordinates><panel_attributes>Stage</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>846</x><y>255</y><w>153</w><h>378</h></coordinates><panel_attributes>java
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>864</x><y>291</y><w>117</w><h>117</h></coordinates><panel_attributes>lang
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>873</x><y>336</y><w>90</w><h>27</h></coordinates><panel_attributes>String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>864</x><y>444</y><w>117</w><h>117</h></coordinates><panel_attributes>io
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>882</x><y>498</y><w>90</w><h>27</h></coordinates><panel_attributes>IOException</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>93</y><w>99</w><h>207</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40;90;60;90;210</additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>183</y><w>45</w><h>117</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;30;110</additional_attributes></element><element><id>Relation</id><coordinates><x>351</x><y>102</y><w>54</w><h>198</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>40;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>102</y><w>126</w><h>198</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>120;10;10;200</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>138</y><w>216</w><h>189</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>220;10;10;190</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>309</y><w>135</w><h>54</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>130;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>462</y><w>81</w><h>90</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;80;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>462</y><w>117</w><h>90</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>110;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>354</y><w>486</w><h>198</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>520;10;460;90;430;200;120;170;80;140;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>441</x><y>444</y><w>459</w><h>135</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>490;70;420;130;70;70;10;10</additional_attributes></element></diagram>
